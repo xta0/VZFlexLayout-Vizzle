@@ -1,0 +1,11 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/VZFlexLayout" "${PODS_ROOT}/Headers/Public/VZFlexLayoutAdapter" "${PODS_ROOT}/Headers/Public/VZInspector" "${PODS_ROOT}/Headers/Public/Vizzle"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/VZFlexLayout" "${PODS_CONFIGURATION_BUILD_DIR}/VZFlexLayoutAdapter" "${PODS_CONFIGURATION_BUILD_DIR}/VZInspector" "${PODS_CONFIGURATION_BUILD_DIR}/Vizzle"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/VZFlexLayout" -isystem "${PODS_ROOT}/Headers/Public/VZFlexLayoutAdapter" -isystem "${PODS_ROOT}/Headers/Public/VZInspector" -isystem "${PODS_ROOT}/Headers/Public/Vizzle"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"VZFlexLayout" -l"VZFlexLayoutAdapter" -l"VZInspector" -l"Vizzle" -l"c++" -l"z" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "MapKit" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

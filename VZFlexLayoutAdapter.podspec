@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A bridge between VZFlexLayout and Vizzle Framework"
   s.description  = <<-DESC
+                    A bridge between VZFlexLayout and Vizzle Framework"
                    DESC
   s.homepage     = "https://github.com/Vizzle/VZFlexLayout"
   s.license      = "MIT"
